@@ -23,6 +23,9 @@ function App() {
 			<FeedBack
 				position="left"
 				numberOfStars={5}
+				showNameInput={false}
+				showEmailInput={false}
+				showRatingInput={false}
 				headerText="Hello"
 				bodyText="Custom Body test"
 				buttonText="This is also custom"

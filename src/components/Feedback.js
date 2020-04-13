@@ -63,8 +63,8 @@ class Feedback extends Component {
 	handleSubmit() {
 		const { showButtonOnSubmit, handleSubmit, handleClose } = this.props;
 		// Check if the values are missing.
-		if (isEmpty(this.state.nameInput && this.props.showNameInput)
-			|| isEmpty(this.state.emailInput && this.props.showEmailInput)
+		if ((isEmpty(this.state.nameInput) && this.props.showNameInput)
+			|| (isEmpty(this.state.emailInput) && this.props.showEmailInput)
 			|| isEmpty(this.state.messageInput)
 			|| (this.state.ratingInput===-1 && this.props.showRatingInput)) {
 			alert("Fields are missing!");
@@ -166,6 +166,7 @@ Feedback.propTypes = {
 	buttonText: PropTypes.string,
 	headerBtnText: PropTypes.string,
 	showEmailInput: PropTypes.bool,
+	showNameInput: PropTypes.bool,
 	showRatingInput: PropTypes.bool,
 	showMessageInput: PropTypes.bool
 }

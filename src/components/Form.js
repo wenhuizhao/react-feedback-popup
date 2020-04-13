@@ -29,6 +29,7 @@ class Form extends Component {
       emailInput,
       ratingInput,
       showEmailInput,
+      showNameInput,
       showMessageInput,
       showRatingInput,
       numberOfStars,
@@ -47,6 +48,7 @@ class Form extends Component {
           bodyText={bodyText}
           numberOfStars={numberOfStars}
           showEmailInput={showEmailInput}
+          showNameInput={showNameInput}
           showMessageInput={showMessageInput}
           showRatingInput={showRatingInput}
           handleMessageInput={handleMessageInput}
